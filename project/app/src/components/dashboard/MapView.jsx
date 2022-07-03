@@ -49,7 +49,7 @@ function MapView({points}) {
             center={centerPosition} 
             zoom={ (dis > 20)? 10: (dis > 7)? 11: (dis > 3.5)? 12: (dis > 2.5)? 13: 14 } 
             zoomControl={false}
-            scrollWheelZoom={true}
+            scrollWheelZoom={false}
             attributionControl={false}
             doubleClickZoom={false}
             dragging={false}
