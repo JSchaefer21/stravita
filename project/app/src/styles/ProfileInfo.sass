@@ -1,0 +1,47 @@
+@use 'base'
+
+
+.Info__header
+    background-color: base.$white
+    padding: 0.7rem 0rem 0.4rem 1rem
+.Info__container--name
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 0.6rem
+.Info__foto
+    width: 3.4rem
+    height: 3.4rem
+    border-radius: 50%
+    object-fit: cover
+.Info__name
+    font-size: 26px
+    font-weight: 500
+    margin-left: 0.1rem
+
+.Info__container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 0.2rem
+
+.Info__container--data
+    width: 50%
+
+.Info__data--title
+    font-size: 23px
+    font-weight: 200
+
+.Info__data--value
+    font-size: 14px
+    font-weight: 400
+    margin-top: 0.1rem
+
+.Info__data--number
+    font-size: 27px
+    font-weight: 400
+    margin-top: -0.2rem
+
+@media only screen and (min-width: base.$width-dimensions)
+    .Info__header
+        border-radius: 8px

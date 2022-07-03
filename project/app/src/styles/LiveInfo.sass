@@ -1,0 +1,52 @@
+@use 'base'
+
+
+.Live
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0px 0px 0px 0px // arriba, der, abjo, izq
+    background-color: #fcfcfc
+    
+
+.Live__container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.Live__container-data
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 1.3rem
+    width: 80%
+    border-bottom:1px solid #97979795
+
+.Live__text
+    font-size: 14px
+    font-weight: 400
+
+.Live__value
+    font-size: 30px
+    font-weight: 400
+
+.Timmer__container
+    width: 90%
+
+.Timer__number
+    font-size: 60px
+    font-weight: 600
+    margin: 1.5rem
+    text-align: center
+
+
+@media only screen and (min-width: base.$width-dimensions)
+    .Live__container
+        max-width: 500px
+
+@media only screen and (min-height: base.$height-dimensions)
+    .Live
+        justify-content: center
+    .Live__container
+        margin: 0
+

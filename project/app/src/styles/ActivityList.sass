@@ -1,0 +1,76 @@
+@use 'base'
+
+.ActivitiesList
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.Activities__list
+    list-style-type: none
+    padding: 0
+    display: flex
+    flex-direction: column
+    gap: 1.6rem
+    margin: 1.5rem 0rem 1.5rem 0rem
+
+.Activity__list--item
+    display: flex
+    flex-direction: column
+
+
+.ActivityList__form
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    width: 90%
+    height: 2rem
+    border: solid 1px base.$border-color
+    border-radius: 10px
+    margin-top: 0.6rem
+    padding: 0
+    background: base.$background-color
+
+.ActivityList__imput  
+    border-style: none
+    outline: none
+    width: 80%
+    height: 2rem
+    border-radius: 10px
+    background: none
+
+.ActivityList__button-form
+    background: none
+    border: none
+    padding: 0 0 0 0
+    width: 2rem
+    font-size: 26px
+    color: base.$main-color
+
+
+.ActivityList__search-icons
+    margin-top: 0.4rem
+    width: 65%
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+
+.Activity__search-icon
+    color: base.$almost-black
+    border: none
+    background: none
+    font-size: 20px
+    padding: 0 0 0 0
+    margin: 0 0 0 0 
+
+.Button__selected
+    color: base.$main-color
+
+@media only screen and (min-width: base.$width-dimensions)
+    .ActivitiesList
+        max-width: 550px
+
+@media only screen and (min-height: base.$height-dimensions)
+    .Activities__list
+        gap: 4rem
+  

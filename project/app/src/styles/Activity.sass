@@ -1,0 +1,273 @@
+@use 'base'
+
+.Activity__header
+    top: 0
+    background-color: #fff
+    display: flex
+    flex-direction: row
+    height: 3.5rem
+    width: 100%
+    border-bottom: 1px solid base.$border-color
+
+.Activity__button--back
+    border: none
+    background: none
+    color: base.$main-color
+    font-weight: 600
+
+.Activity__body
+    padding: 0
+    display: flex
+    justify-content: center
+    align-items: baseline
+    background-color: #ebebeb
+
+.Activity__footer
+    bottom: 0
+    display: flex
+    flex-direction: column
+    width: 100%
+    border-top: 1px solid base.$border-color
+    height: 9rem
+    justify-content: space-around
+    background-color: #fff
+
+.Activity__footer-record
+    bottom: 0
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    width: 100%
+    border-top: 1px solid base.$border-color
+    height: 7rem
+    background-color: #fff
+
+.Activity__footer-icon
+    color: base.$almost-black
+    border: none
+    background: none
+    font-size: 33px
+    padding: 0 0 0 0
+    margin: 0 0 0 0 
+
+.Activity__button--start
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 75px
+    width: 75px
+    border-radius: 50%
+    border: none
+    font-weight: 600
+    font-size: 16px
+    color: #fff
+    background-color: base.$main-color
+
+.Activity__button--register
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 75px
+    width: 75px
+    border-radius: 50%
+    text-align: center
+    background-color: white
+    color: base.$main-color
+    border: 3px solid base.$main-color
+    font-size: 15px
+    font-weight: 700
+
+.Activity__footerContainer__selector
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+
+.Activity__footerButton__selector
+    color: base.$main-color
+    border: none
+    background-color: none
+    background: none
+    font-size: 36px
+    margin-top: 0px
+    margin-bottom: 0px
+    padding: 0
+
+.Activity__footerContainer__buttons
+    display: flex
+    flex-direction: row
+    justify-content: center
+    gap: 1.6rem
+
+
+
+.Finish__body
+    display: flex
+    flex-direction: column
+    background-color: #e7e7e7
+    align-items: center
+    justify-content: space-between
+
+.Finish__form
+    padding: 0
+    margin-top: 1rem
+    gap: 0.2rem
+    
+.Finish__form-text
+    width: 80%
+    margin: 0
+    margin-top: 1rem
+    font-size: 18px
+    font-weight: 400
+    text-align: left
+
+.Finish__input-title
+    width: 85%
+    height: 35px
+    border-radius: 5px
+    border-style: none
+
+.Finish__input-text
+    width: 85%
+    height: 100px
+    border-radius: 5px
+    border-style: none
+    text-align: top
+
+.Finish__input-selector
+    margin-top: 1.8rem
+    width: 85%
+    height: 35px
+    border-radius: 5px
+    color: base.$text-grey
+    border-style: none
+    align-self: center
+    padding-left: 10px
+
+
+
+.Finish__input-file
+    width: 72%
+    border-radius: 5px
+    color: base.$text-grey
+    border: 1px solid #ccc
+    padding: 1rem
+    display: flex
+    justify-content: center
+    text-align: center
+    
+
+.Finish__button-delete
+    width: 85%
+    height: 38px
+    font-weight: 600
+    padding: 0.25rem
+    color: #b90000
+    margin: 2rem 0rem 2rem 0rem
+    font-size: 17px
+    border: 1px solid base.$border-color
+    border-radius: 5px
+    text-align: center
+    text-decoration: none
+
+.Button__selected
+    color: base.$main-color
+
+
+
+.Activity__footer-finish
+    bottom: 0
+    display: flex
+    flex-direction: column
+    width: 100%
+    border-top: 1px solid base.$border-color
+    height: 6rem
+    justify-content: space-around
+    background-color: #fff
+
+.Activity__button-finish
+    height: 40px
+    width: 85%
+    border: none
+    border-radius: 5px
+    text-align: center
+    font-weight: 700
+    font-size: 17px
+    color: #fff
+    background-color: base.$main-color
+
+
+
+
+
+
+.Activity__button-hide
+    position: absolute
+    right: 0
+    z-index: 999
+    width: 3rem
+    height: 3rem
+    background: none
+    border: none
+
+.Activity__button-dev
+    position: absolute
+    left: 1rem
+    top: 1rem
+    z-index: 999
+    font-weight: 500
+    background: none
+    border: none
+    color: #000000
+    font-size: 2.5rem
+    margin: 0
+    padding: 0
+    
+.dev-activated
+    color: #af0b0b
+
+
+
+
+@media only screen and (min-width: base.$width-dimensions)
+    .Activity__header
+        position: absolute
+        z-index: 900
+        height: 2.5rem
+        max-width: 500px
+        border-left: 1px solid base.$border-color
+        border-right: 1px solid base.$border-color
+        border-bottom-left-radius: 6px
+        border-bottom-right-radius: 6px
+    .Activity__footer, .Activity__footer-record, .Activity__footer-finish
+        position: absolute
+        bottom: 0
+        z-index: 900
+        height: 7.5rem
+        max-width: 500px
+        border-left: 1px solid base.$border-color
+        border-right: 1px solid base.$border-color
+        border-top-left-radius: 6px
+        border-top-right-radius: 6px
+    .Activity__footer-record
+        height: 6rem
+    .Activity__footer-finish
+        height: 4.5rem
+    .Activity__button--back
+        padding-left: 1rem
+    .Finish__form
+        max-width: 500px
+    .Finish__button-delete
+        max-width: 425px
+        margin-top: 3rem
+    .Finish__body
+        justify-content: center
+        padding-top: 6rem
+        padding-bottom: 4rem
+    
+
+
+@media only screen and (min-height: base.$height-dimensions)
+    .Activity__footer
+        height: 8rem
+        padding-top: 1rem

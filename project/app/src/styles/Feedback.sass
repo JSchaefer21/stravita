@@ -1,0 +1,40 @@
+@use 'base'
+    
+.Feedback
+    z-index: 9999!important
+    position: fixed
+    top: 55px
+    padding: 0.5rem 1rem
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    color: white
+    animation-duration: 1s  
+    animation-name: test
+    @keyframes test
+        from 
+            opacity: 0
+        to 
+            opacity: 1
+      
+.Feedback--error
+    background-color: #d62a2a
+
+.Feedback--success
+    background-color: #319818
+
+.Icon
+    margin-right: 1rem
+
+
+.Feedback__font
+    font-size: 16px
+    font-weight: bold
+    margin: 0
+
+
+@media only screen and (min-width: base.$width-dimensions)
+    .Feedback
+        max-width: 22rem
+        border-radius: 6px
