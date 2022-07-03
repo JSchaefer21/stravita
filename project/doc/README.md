@@ -5,9 +5,10 @@ Strava a manita
 
 
 This web-**Application** is designed to record different mountain activities with the main focus on altitude and distance from start point to finish.
-
 It is a social network where users can comment and like each other's activities.
 
+[stravita]: https://stravita.surge.sh
+Visit [stravita]
 
 <img src="images/screen-welcome.png" width="200"><img src="images/screen-home-0.png" width="200"><img src="images/screen-home-2.png" width="200">
 
