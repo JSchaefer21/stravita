@@ -36,7 +36,7 @@ function ActivityStart(props) {
     
     const handleStartClick = async() => {
         try {
-            if(position) {
+            if(position[2] || position[2]===null) {
                 const token = sessionStorage.token
                 const activityId = await createActivity(token, sport)
                 await addPointToActivity(sessionStorage.token, activityId, position)
