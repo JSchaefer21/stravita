@@ -125,7 +125,7 @@ function ActivityItem (props) {
         { !setDelete && images && imgview && (images.length>0) ? <div className='ActivityItem__image-movement'>
             {images.map((image, index)=> <img className='ActivityItem__image' src={image}  key={index}/>)}
             <div className='ActivityItem__footer mw'>
-                <button className='ActivityItem__footer--button mw material-symbols-outlined' onClick={handleImagesClick}>expand_less</button>
+                <button className='ActivityItem__footer-button mw material-symbols-outlined' onClick={handleImagesClick}>expand_less</button>
             </div>
             </div>: '' }
 
