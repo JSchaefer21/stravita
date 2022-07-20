@@ -114,7 +114,7 @@ function ActivityRecord(props) {
     <button className="Activity__button-hide" onClick={handleDevelopClick}></button>
     {hide && <button id='dev' className="Activity__button-dev material-symbols-outlined" onClick={handleTurboClick}>offline_bolt</button>}
 
-    <main className="Activity__body mw mh">
+    <main className="Activity__body mw mh overflow">
         { view === 'map' && position && points && <Map position={position} center={true} points={points}/> } 
         { view === 'timer' && <LiveInfo activityId={props.activityId} onPointRegistered={timestamp}/> } 
     </main>

@@ -9,15 +9,15 @@ function Timer({initialTime}) {
 
     useEffect(()=>{
         let myInterval = setInterval(() => {
-            if (seconds < 60) {
-                setSeconds(seconds + 1)
+            if (seconds > 0) {
+                setSeconds(seconds - 1)
             }
             else {
-                setSeconds(1)
-                setMinutes(minutes + 1)
-                if (minutes > 60) {
-                    setMinutes(0)
-                    setHours(hours + 1)
+                setSeconds(59)
+                setMinutes(minutes - 1)
+                if (minutes < 0) {
+                    setMinutes(59)
+                    setHours(hours - 1)
                 }
             }
         }, 1000)
@@ -25,10 +25,10 @@ function Timer({initialTime}) {
             clearInterval(myInterval)}
     })
 
-
     return (
         <div className='Timer__container mw'>
-            <h1 className='Timer__number'> {hours<10 ? `0${hours}`: hours}:{minutes<10 ? `0${minutes}`: minutes}:{seconds<10 ? `0${seconds}`: seconds}</h1> 
+            { (hours<0)? <h1 className='Timer__number-countdown'> 00:00:00 </h1>
+            : <h1 className='Timer__number-countdown'> {hours<10 ? `0${hours}`: hours}:{minutes<10 ? `0${minutes}`: minutes}:{seconds<10 ? `0${seconds}`: seconds}</h1> }
         </div>
     )
 }
