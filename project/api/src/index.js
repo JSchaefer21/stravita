@@ -12,7 +12,7 @@ const { handleRegisterUser,
     handleAddPointToActivity, handleSaveActivity,
     handleToggleLikeOnActivity, handleRetrieveActivity,
     handleRetrieveSearchedActivities, handleRetrieveSportActivities, 
-    handleSaveComment } = require('./handlers')
+    handleRetrieveTemperature, handleSaveComment } = require('./handlers')
 
 const { env: { MONGODB_URL, PORT=8080 }, argv: [ , , port = PORT]} = process
 
@@ -64,6 +64,9 @@ const { env: { MONGODB_URL, PORT=8080 }, argv: [ , , port = PORT]} = process
     routes.patch('/activities/:activityId/like', handleToggleLikeOnActivity)
     // Save Comment
     routes.patch('/activities/:activityId/comment', jsonBodyParser, handleSaveComment)
+
+    // Retrieve Temperature
+    routes.get('/temperature/:lat/:lon', handleRetrieveTemperature)
     
 
     api.use('/api', routes)

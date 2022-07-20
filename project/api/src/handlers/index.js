@@ -10,6 +10,7 @@ module.exports = {
     handleRetrieveActivity: require('./handleRetrieveActivity'),
     handleRetrieveSearchedActivities: require('./handleRetrieveSearchedActivities'),
     handleRetrieveSportActivities: require('./handleRetrieveSportActivities'),
+    handleRetrieveTemperature: require('./handleRetrieveTemperature'),
     handleRetrieveUser: require('./handleRetrieveUser'),
     handleRetrieveUserActivities: require('./handleRetrieveUserActivities'),
     handleSaveActivity: require('./handleSaveActivity'),
